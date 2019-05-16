@@ -1,0 +1,110 @@
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: chartreuse;
+  font-family: monospace;
+  width: 100%;
+  margin: 0;
+}
+
+h1,h2,h3,h4,p {
+  margin: 0;
+}
+::-webkit-scrollbar,
+.right::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.main {
+  background: #ff0101;
+  padding: 20px;
+  font-size: .8675em;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: snow;
+  letter-spacing: 3em;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  background: yellow;
+  color: #ff0101;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.sched,
+.live {
+  border: 3px solid yellow;
+  position: relative;
+  height: calc(100vh - 118px);
+  width: 50%;
+  overflow: hidden;
+}
+.sched-items {
+  overflow: scroll;
+  height: 100%;
+  padding-bottom: 100px;
+  padding-top: 0px;
+}
+.perf {
+  padding: 20px;
+}
+.perf h2 {
+  font-size: 1em;
+}
+.perf h3 {
+  font-size: .8675em;
+}
+.perf p {
+  font-size: .75em;
+}
+
+.inner {
+  padding: 60px;
+}
+.live-now {
+  display: none;
+}
+.live-now.active {
+  display: block;
+}
+.live-now.active h2 {
+  font-size: 4em;
+}
+.live-now.active h3 {
+  font-size: 3em;
+}
+.live-now.active p {
+  font-size: 2em;
+}
+
+
+.live .top { background: blue; position: absolute; top: 0; width: 100%; height: 30px; color: white;
+font-size: 1em; display: flex; align-items: center;}
+.live .right { background: blue; position: absolute; right: 0; width: 30px; height: 100%; color: white;
+font-size: 1em; display: flex; align-items: center;}
+.live .bottom { background: blue; position: absolute; bottom: 0; width: 100%; height: 30px; color: white;
+font-size: 1em; display: flex; align-items: center;}
+.live .left { background: blue; position: absolute; left: 0; width: 30px; height: 100%; color: white;
+font-size: 1em; display: flex; align-items: center;}
+marquee {text-transform: uppercase; letter-spacing: .05em;}
+.live .right marquee { height: 100%; display: flex;
+align-items: center;justify-content: center;}
+.live .left marquee { height: 100%; display: flex;
+align-items: center;justify-content: center;}
