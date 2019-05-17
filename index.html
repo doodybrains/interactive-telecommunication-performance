@@ -16,7 +16,7 @@
           schedule
         </div>
         <div class="sched-items">
-          <div data-id="1" class="perf">
+          <div data-id="1" class="perf selected">
             <p>0:00</p>
             <h2>dana elkis</h2>
             <h3>pendulum performance</h3>
@@ -100,7 +100,28 @@
       </div>
     </div>
     <script>
+      console.log('hi');
+      var performanceItems = document.querySelectorAll(".perf");
+      console.log(performanceItems);
+      for (var i=0; i<performanceItems.length; i++) {
+        console.log(performanceItems[i]);
+        performanceItems[i].addEventListener('click', makeLive);
+      }
 
+      function makeLive() {
+        var liveItems = document.querySelectorAll(".live-now");
+        for (var i=0; i<liveItems.length; i++) {
+          liveItems[i].classList.remove('active');
+        }
+        for (var i=0; i<performanceItems.length; i++) {
+          console.log(performanceItems[i]);
+          performanceItems[i].classList.remove('selected');
+        }
+        var id = this.getAttribute('data-id');
+        var live = document.getElementById(id);
+        this.classList.add('selected');
+        live.classList.add('active');
+      }
     </script>
   </body>
 </html>
