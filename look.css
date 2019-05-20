@@ -73,12 +73,24 @@ h1,h2,h3,h4,p {
   letter-spacing: .02em;
   font-size: 1.975em;
 }
+.main h4 {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  color: blue;
+  padding: 10px;
+  transform: rotate(-20deg);
+  z-index: 999;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  font-size: 1.975em;
+}
 .container {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  height: calc(100vh - 185px);
+  height: calc(100vh - 230px);
 }
 
 .title {
@@ -124,10 +136,12 @@ h1,h2,h3,h4,p {
 }
 .perf h3 {
   font-size: 1.45em;
+  margin-bottom: 5px;
 }
 .perf p {
-  font-size: 1.125em;
-  padding-bottom: 20px;
+  font-size: 1.625em;
+  padding-bottom: 15px;
+  font-weight: bold;
 }
 
 .inner {
