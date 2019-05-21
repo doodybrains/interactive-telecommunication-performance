@@ -167,11 +167,16 @@
       function makeLive() {
         var liveItems = document.querySelectorAll(".live-now");
         for (var i=0; i<liveItems.length; i++) {
-          liveItems[i].classList.remove('active');
+          if (liveItems[i].classList.contains('active')) {
+            liveItems[i].classList.remove('active');
+          }
         }
         for (var i=0; i<performanceItems.length; i++) {
           console.log(performanceItems[i]);
-          performanceItems[i].classList.remove('selected');
+          if (performanceItems[i].classList.contains('selected')) {
+            performanceItems[i].classList.remove('selected');
+          }
+
         }
         var id = this.getAttribute('data-id');
         var live = document.getElementById(id);
