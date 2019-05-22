@@ -59,6 +59,9 @@ h1,h2,h3,h4,p {
   letter-spacing: 0;
   font-size: 1.575em;
   font-style: italic;
+  background: skyblue;
+  color: red;
+  padding: 0 8px;
 }
 .main h3 {
   position: fixed;
@@ -139,9 +142,12 @@ h1,h2,h3,h4,p {
   margin-bottom: 5px;
 }
 .perf p {
-  font-size: 1.625em;
-  padding-bottom: 15px;
+  background: white;
+  font-size: 1.825em;
+  margin-bottom: 15px;
   font-weight: bold;
+  padding: 0 5px;
+  text-align: center;
 }
 
 .inner {
